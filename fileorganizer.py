@@ -1,6 +1,5 @@
 from watchdog.observers import Observer
 import time
-from watchdog.events import FileSystemEventHandler
 import os
 import json
 from watchdog.events import PatternMatchingEventHandler
@@ -69,7 +68,7 @@ observer.start()
 
 try:
 	while True:
-		time.sleep(1)
+		time.sleep(10)
 except KeyboardInterrupt:
 	observer.stop()
 observer.join()
