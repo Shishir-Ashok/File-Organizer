@@ -19,11 +19,7 @@ torrent_folder = '/Users/shishir/Desktop/folder/Torrent'
 videos_folder = '/Users/shishir/Desktop/folder/Videos'
 zip_folder = '/Users/shishir/Desktop/folder/Zip files'
 others_folder = '/Users/shishir/Desktop/folder/Others'
-# filename = 'COnference paper.tex'
-# src = folder_to_track + '/' + filename
-# dest = folder_destination + '/' + filename
 
-# os.rename(src,dest)
 
 patterns = "*"
 ignore_patterns = ""
