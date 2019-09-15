@@ -50,10 +50,10 @@ def on_change(event):
 				os.rename(src,new_destination)
 
 
-event_handler.on_created = on_change
-event_handler.on_deleted = on_change
 event_handler.on_modified = on_change
 event_handler.on_moved = on_change
+event_handler.on_created = on_change
+
 
 
 go_recursively = True
