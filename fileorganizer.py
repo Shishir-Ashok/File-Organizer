@@ -50,11 +50,11 @@ class MyHandler(FileSystemEventHandler):
 					new_destination = others_folder + "/" + file
 					os.rename(src,new_destination)
 
-	def checkExt(ext):
-		ai = ['.ai','.psd']
-		c = ['.c','.cpp']
-		doc = ['.txt','.docx','pages']
-		if ext in ai
+	# def checkExt(ext):
+	# 	ai = ['.ai','.psd']
+	# 	c = ['.c','.cpp']
+	# 	doc = ['.txt','.docx','pages']
+	# 	if ext in ai
 
 
 
