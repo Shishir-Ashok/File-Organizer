@@ -4,20 +4,21 @@ import os
 import time
 import json
 
+folderPath = '/Users/shishir/Desktop/folder/'
 
-folder_to_track = '/Users/shishir/Desktop/folder' 
-ai_folder = '/Users/shishir/Desktop/folder/ai or PSD'
-c_folder = '/Users/shishir/Desktop/folder/C or C++'
-dmg_folder = '/Users/shishir/Desktop/folder/DMG'
-documents_folder = '/Users/shishir/Desktop/folder/Documents'
-html_folder = '/Users/shishir/Desktop/folder/HTML'
-images_Folder = '/Users/shishir/Desktop/folder/Images'
-pdf_folder = '/Users/shishir/Desktop/folder/PDF'
-python_folder = '/Users/shishir/Desktop/folder/Python'
-torrent_folder = '/Users/shishir/Desktop/folder/Torrent'
-videos_folder = '/Users/shishir/Desktop/folder/Videos'
-zip_folder = '/Users/shishir/Desktop/folder/Zip files'
-others_folder = '/Users/shishir/Desktop/folder/Others'
+folder_to_track = folderPath 
+ai_folder = folderPath + 'ai or PSD'
+c_folder = folderPath + 'C or C++'
+dmg_folder = folderPath + 'DMG'
+documents_folder = folderPath + 'Documents'
+html_folder = folderPath + 'HTML'
+images_Folder = folderPath + 'Images'
+pdf_folder = folderPath + 'PDF'
+python_folder = folderPath + 'Python'
+torrent_folder = folderPath + 'Torrent'
+videos_folder = folderPath + 'Videos'
+zip_folder = folderPath + 'Zip files'
+others_folder = folderPath + 'Others'
 
 
 
@@ -48,6 +49,13 @@ class MyHandler(FileSystemEventHandler):
 					src = folder_to_track + "/" + file
 					new_destination = others_folder + "/" + file
 					os.rename(src,new_destination)
+
+	def checkExt(ext):
+		ai = ['.ai','.psd']
+		c = ['.c','.cpp']
+		doc = ['.txt','.docx','pages']
+		if ext in ai
+
 
 
 
