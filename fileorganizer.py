@@ -6,13 +6,14 @@ import json
 import mapping
 
 
-folder_to_track = '/Users/shishir/Desktop/folder/'
+folder_to_track = '/Users/shishir/Downloads/'
 class MyHandler(FileSystemEventHandler):
 	
 	def on_modified(self,event):
 		for file in os.listdir(folder_to_track):
 			if os.path.isfile(folder_to_track+ "/" + file):
 				name, ext = os.path.splitext(file)
+				ext = ext.lower()
 				folderName = mapping.mapExtention(ext)
 				src = folder_to_track + "/" + file
 				new_destination = folderName + "/" + file

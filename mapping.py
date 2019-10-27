@@ -9,7 +9,7 @@ def mapExtention(extention):
 
 
 
-folderPath = '/Users/shishir/Desktop/folder/'
+folderPath = '/Users/shishir/Downloads/'
 ai_folder = folderPath + 'ai or PSD'
 c_folder = folderPath + 'C or C++'
 dmg_folder = folderPath + 'DMG'
